@@ -1,13 +1,13 @@
 import React from "react";
-// import WithContextAPI from "./WithContextAPI";
-import WithPropsDrilling from "./WithPropsDrilling";
+// import WithPropsDrilling from "./WithPropsDrilling";
+import WithContextAPI from "./WithContextAPI";
 
 const index = () => {
   return (
     <div>
       <h1>My Ecommerce App</h1>
-      <WithPropsDrilling />
-      {/* <WithContextAPI /> */}
+      {/* <WithPropsDrilling /> */}
+      <WithContextAPI />
     </div>
   );
 };
