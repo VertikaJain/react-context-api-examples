@@ -1,22 +1,25 @@
 import React from "react";
-import { Categories } from "../../productsData";
+import SingleProduct from "./SingleProduct";
+import Preferences from "./Preferences";
 
-const ProductList = ({ products, updatePreference }) => {
+const ProductList = ({ cartProducts, updateCart, updatePreference }) => {
   return (
     <div>
-      <h2>All Products</h2>
-      {products.map((prod) => (
-        <li key={prod.id}>{prod.name}</li>
+      <h2>Products Cart</h2>
+
+      {cartProducts.map((product) => (
+        <SingleProduct
+          key={product.id}
+          productId={product.id}
+          productName={product.name}
+          productDescription={product.description}
+          updateCart={updateCart}
+        />
       ))}
+
       <h2>Select Prefered Category</h2>
-      <select onChange={(e) => updatePreference(e.target.value)}>
-        <option>Select Preference</option>
-        {Categories.map((category) => (
-          <option key={category.id} value={category.name}>
-            {category.name}
-          </option>
-        ))}
-      </select>
+
+      <Preferences updatePreference={updatePreference} />
     </div>
   );
 };
