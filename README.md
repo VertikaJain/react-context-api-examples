@@ -14,6 +14,6 @@ Execute `npm run start` in command prompt.
 
 ## Resources
 
-[Passing Props to a component](https://react.dev/learn/passing-props-to-a-component)
-[Using Context API to avoid props drilling](https://react.dev/learn/passing-data-deeply-with-context)
-[First example you can try](https://www.youtube.com/watch?v=4UZrsTqkcW4&t=28856s)
+1. [Passing Props to a component](https://react.dev/learn/passing-props-to-a-component)
+2. [Using Context API to avoid props drilling](https://react.dev/learn/passing-data-deeply-with-context)
+3. [First example you can try](https://www.youtube.com/watch?v=4UZrsTqkcW4&t=28856s)
